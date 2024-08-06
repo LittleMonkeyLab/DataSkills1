@@ -4,7 +4,7 @@ editor: visual
 
 ### Introduction
 
-Hello!
+Hello my dudes!
 
 Welcome to **PSYC 3400: Statistical Methods in Behavioral Research**. In this course, we will be using R-Studio in order to visualize and implement what you learn in lecture.
 
