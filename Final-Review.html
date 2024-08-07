@@ -356,7 +356,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"id":1,"options":{"fig-cap":"","context":"interactive","out-width":"700px","message":"true","dpi":72,"editor-max-height":"","out-height":"","read-only":"false","editor-quick-suggestions":"false","results":"markup","editor-word-wrap":"true","classes":"","warning":"true","output":"true","comment":"","editor-font-scale":"1","autorun":"false","label":"unnamed-chunk-1","fig-width":7,"fig-height":5},"code":"wrong = 18-10/7\nwrong\nright = (18-10)/7\nright"},{"id":2,"options":{"fig-cap":"","context":"interactive","out-width":"700px","message":"true","dpi":72,"editor-max-height":"","out-height":"","read-only":"false","editor-quick-suggestions":"false","results":"markup","editor-word-wrap":"true","classes":"","warning":"true","output":"true","comment":"","editor-font-scale":"1","autorun":"false","label":"unnamed-chunk-2","fig-width":7,"fig-height":5},"code":"incorrect = (100-200*300/4)/(300-120^2/4)*(220-320^2/4)\ncorrect = (100-(200*300/4)/(300-((120^2)/4)*(220-((320^2)/4))))\nincorrect\ncorrect\ndiff = incorrect-correct\ndiff"}];
+globalThis.qwebrCellDetails = [{"id":1,"options":{"read-only":"false","classes":"","context":"interactive","editor-quick-suggestions":"false","editor-font-scale":"1","fig-height":5,"results":"markup","out-height":"","editor-max-height":"","output":"true","fig-cap":"","dpi":72,"autorun":"false","editor-word-wrap":"true","warning":"true","comment":"","out-width":"700px","fig-width":7,"message":"true","label":"unnamed-chunk-1"},"code":"wrong = 18-10/7\nwrong\nright = (18-10)/7\nright"},{"id":2,"options":{"read-only":"false","classes":"","context":"interactive","editor-quick-suggestions":"false","editor-font-scale":"1","fig-height":5,"results":"markup","out-height":"","editor-max-height":"","output":"true","fig-cap":"","dpi":72,"autorun":"false","editor-word-wrap":"true","warning":"true","comment":"","out-width":"700px","fig-width":7,"message":"true","label":"unnamed-chunk-2"},"code":"incorrect = (100-200*300/4)/(300-120^2/4)*(220-320^2/4)\ncorrect = (100-(200*300/4)/(300-((120^2)/4)*(220-((320^2)/4))))\nincorrect\ncorrect\ndiff = incorrect-correct\ndiff"}];
 
 </script>
 <script type="module">
@@ -2302,7 +2302,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/LittleMonkeyLab\.github\.io\/DataSkills1\/");
+      var filterRegex = new RegExp("https:\/\/dataskills1\.littlemonkeylab\.com");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

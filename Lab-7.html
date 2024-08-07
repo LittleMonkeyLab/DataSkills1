@@ -390,7 +390,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"code":"x=c(111.66,117.50,104.82,146.03,134.50,106.52,115.17,114.40,129.36,119.00)\nt.test(x,mu=126.42)","id":1,"options":{"editor-quick-suggestions":"false","comment":"","editor-font-scale":"1","autorun":"false","label":"unnamed-chunk-1","out-height":"","editor-max-height":"","message":"true","output":"true","results":"markup","context":"interactive","fig-cap":"","out-width":"700px","dpi":72,"fig-width":7,"warning":"true","classes":"","read-only":"false","editor-word-wrap":"true","fig-height":5}}];
+globalThis.qwebrCellDetails = [{"options":{"fig-height":5,"results":"markup","warning":"true","context":"interactive","out-height":"","out-width":"700px","editor-font-scale":"1","comment":"","fig-cap":"","editor-max-height":"","autorun":"false","label":"unnamed-chunk-1","dpi":72,"fig-width":7,"editor-word-wrap":"true","read-only":"false","classes":"","output":"true","editor-quick-suggestions":"false","message":"true"},"id":1,"code":"x=c(111.66,117.50,104.82,146.03,134.50,106.52,115.17,114.40,129.36,119.00)\nt.test(x,mu=126.42)"}];
 
 </script>
 <script type="module">
@@ -2272,7 +2272,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/LittleMonkeyLab\.github\.io\/DataSkills1\/");
+      var filterRegex = new RegExp("https:\/\/dataskills1\.littlemonkeylab\.com");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
