@@ -28,7 +28,7 @@ website:
 format:
   html:
     theme: cosmo
-    css: styles.css
+    css: gsrm1.css
     toc: true
 
 # Set default options for every webpage that may or may not include webR.
