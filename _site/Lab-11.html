@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.39">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>DataSkills1 – lab-11</title>
+<title>lab-11 – DataSkills1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -69,10 +69,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-6bd9cfa162949bde0a231f530c97869d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -131,7 +131,7 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="gsrm1.css">
 </head>
 
 <body class="nav-sidebar floating nav-fixed">
@@ -286,7 +286,7 @@ window.Quarto = {
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
@@ -302,12 +302,12 @@ window.Quarto = {
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(onefact)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   groups     score
-1 Control  9.785997
-2 Control  9.067558
-3 Control  8.234935
-4 Control 10.118448
-5 Control  9.906783
-6 Control  9.782977</code></pre>
+1 Control 12.610384
+2 Control 11.078135
+3 Control  9.651922
+4 Control  9.109911
+5 Control  9.701754
+6 Control  8.296269</code></pre>
 </div>
 </div>
 <p>We have three independent variables, or conditions, control, treatment 1 and treatment 2. We have one dependent variable, some idea of “<em>score</em>” or our dependent variabe.</p>
@@ -318,8 +318,8 @@ window.Quarto = {
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(onefact.mod)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>            Df Sum Sq Mean Sq F value Pr(&gt;F)    
-groups       2 1579.0   789.5   694.2 &lt;2e-16 ***
-Residuals   57   64.8     1.1                   
+groups       2 1452.5   726.3   636.3 &lt;2e-16 ***
+Residuals   57   65.1     1.1                   
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </div>
@@ -336,66 +336,66 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a> twofact.df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   Gender   Diet    Count
-1    Male Diet 1 31.24697
-2    Male Diet 2 28.52088
-3    Male Diet 1 30.11243
-4    Male Diet 2 27.41473
-5    Male Diet 1 27.20187
-6    Male Diet 2 26.77232
-7    Male Diet 1 26.02504
-8    Male Diet 2 25.79064
-9    Male Diet 1 27.98133
-10   Male Diet 2 29.93708
-11   Male Diet 1 24.94564
-12   Male Diet 2 26.16024
-13   Male Diet 1 27.89830
-14   Male Diet 2 27.52076
-15   Male Diet 1 26.37323
-16   Male Diet 2 23.84971
-17   Male Diet 1 25.19429
-18   Male Diet 2 26.59642
-19   Male Diet 1 32.09951
-20   Male Diet 2 29.81975
-21   Male Diet 1 27.82117
-22   Male Diet 2 30.57861
-23   Male Diet 1 28.10972
-24   Male Diet 2 25.67922
-25   Male Diet 1 26.76068
-26   Male Diet 2 28.91610
-27   Male Diet 1 29.70420
-28   Male Diet 2 26.04403
-29   Male Diet 1 23.65176
-30   Male Diet 2 26.52427
-31 Female Diet 1 36.39547
-32 Female Diet 2 35.96924
-33 Female Diet 1 34.83035
-34 Female Diet 2 34.22294
-35 Female Diet 1 38.09169
-36 Female Diet 2 37.18633
-37 Female Diet 1 34.12382
-38 Female Diet 2 36.35077
-39 Female Diet 1 37.24504
-40 Female Diet 2 34.16163
-41 Female Diet 1 35.42092
-42 Female Diet 2 36.70670
-43 Female Diet 1 35.14656
-44 Female Diet 2 34.15490
-45 Female Diet 1 34.37244
-46 Female Diet 2 38.85585
-47 Female Diet 1 36.11393
-48 Female Diet 2 35.14933
-49 Female Diet 1 35.08811
-50 Female Diet 2 33.46398
-51 Female Diet 1 36.91689
-52 Female Diet 2 33.15459
-53 Female Diet 1 34.65833
-54 Female Diet 2 34.30363
-55 Female Diet 1 32.98074
-56 Female Diet 2 36.61512
-57 Female Diet 1 36.00477
-58 Female Diet 2 35.67678
-59 Female Diet 1 35.38800
-60 Female Diet 2 39.55730</code></pre>
+1    Male Diet 1 28.74186
+2    Male Diet 2 30.27268
+3    Male Diet 1 28.00505
+4    Male Diet 2 25.63777
+5    Male Diet 1 26.03383
+6    Male Diet 2 27.69609
+7    Male Diet 1 28.49940
+8    Male Diet 2 31.03110
+9    Male Diet 1 27.51077
+10   Male Diet 2 27.71397
+11   Male Diet 1 25.28028
+12   Male Diet 2 27.88779
+13   Male Diet 1 26.03017
+14   Male Diet 2 29.96210
+15   Male Diet 1 30.91905
+16   Male Diet 2 31.81023
+17   Male Diet 1 26.07187
+18   Male Diet 2 32.08203
+19   Male Diet 1 26.68537
+20   Male Diet 2 28.74173
+21   Male Diet 1 26.54496
+22   Male Diet 2 29.08012
+23   Male Diet 1 25.65994
+24   Male Diet 2 28.07395
+25   Male Diet 1 28.61193
+26   Male Diet 2 25.42638
+27   Male Diet 1 24.58840
+28   Male Diet 2 31.68524
+29   Male Diet 1 30.37514
+30   Male Diet 2 29.72345
+31 Female Diet 1 34.14288
+32 Female Diet 2 36.30191
+33 Female Diet 1 34.27098
+34 Female Diet 2 34.24302
+35 Female Diet 1 31.46567
+36 Female Diet 2 37.26274
+37 Female Diet 1 33.86168
+38 Female Diet 2 35.38223
+39 Female Diet 1 35.46164
+40 Female Diet 2 35.82849
+41 Female Diet 1 32.87669
+42 Female Diet 2 34.51130
+43 Female Diet 1 34.93126
+44 Female Diet 2 35.92812
+45 Female Diet 1 38.12487
+46 Female Diet 2 33.56888
+47 Female Diet 1 36.68005
+48 Female Diet 2 33.89883
+49 Female Diet 1 33.97416
+50 Female Diet 2 33.63973
+51 Female Diet 1 34.06818
+52 Female Diet 2 31.52586
+53 Female Diet 1 36.86048
+54 Female Diet 2 36.25694
+55 Female Diet 1 35.46921
+56 Female Diet 2 35.33304
+57 Female Diet 1 36.54446
+58 Female Diet 2 35.87520
+59 Female Diet 1 38.40042
+60 Female Diet 2 35.08592</code></pre>
 </div>
 </div>
 <p>We can see that there are two levels of the independent variable (gender) and two levels of the independent variable (Diet) and one dependent variable, count.</p>
@@ -406,10 +406,10 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(twofact.mod)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>            Df Sum Sq Mean Sq F value Pr(&gt;F)    
-Gender       1  984.6   984.6 273.622 &lt;2e-16 ***
-Diet         1    0.1     0.1   0.023  0.879    
-Gender:Diet  1    1.0     1.0   0.278  0.600    
-Residuals   56  201.5     3.6                   
+Gender       1  703.1   703.1 207.366 &lt;2e-16 ***
+Diet         1   10.2    10.2   3.017 0.0879 .  
+Gender:Diet  1   14.8    14.8   4.353 0.0415 *  
+Residuals   56  189.9     3.4                   
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </div>
@@ -447,11 +447,11 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(<span class="fu">aov</span>(scored<span class="sc">~</span>iv1<span class="sc">*</span>iv2,<span class="at">data =</span> df))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>            Df Sum Sq Mean Sq F value Pr(&gt;F)    
-iv1          1   6237    6237    5838 &lt;2e-16 ***
-iv2          1   1134    1134    1061 &lt;2e-16 ***
-iv1:iv2      1    144     144     135 &lt;2e-16 ***
-Residuals   76     81       1                   
+<pre><code>            Df Sum Sq Mean Sq F value   Pr(&gt;F)    
+iv1          1   5982    5982 4983.95  &lt; 2e-16 ***
+iv2          1   1135    1135  945.70  &lt; 2e-16 ***
+iv1:iv2      1    100     100   83.71 6.92e-14 ***
+Residuals   76     91       1                     
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </div>
@@ -660,8 +660,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -772,7 +770,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {

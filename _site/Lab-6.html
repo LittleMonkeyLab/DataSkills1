@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.39">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="David Brocker, Frank Grasso, Ian Streiter">
 
-<title>DataSkills1 – lab-6</title>
+<title>lab-6 – DataSkills1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -36,10 +36,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-6bd9cfa162949bde0a231f530c97869d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -357,7 +357,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"code":"library(BSDA)\n\nx=c(71,74,73,71,78,73,72,71,73,72,74,72,75)\nz.test(x,sigma.x=2.4,\n       alternative=\"two.sided\", \n       mu=71)","options":{"fig-height":5,"output":"true","comment":"","results":"markup","message":"true","classes":"","fig-cap":"","editor-max-height":"","context":"interactive","editor-word-wrap":"true","autorun":"false","fig-width":7,"warning":"true","out-height":"","editor-font-scale":"1","label":"unnamed-chunk-1","out-width":"700px","dpi":72,"read-only":"false","editor-quick-suggestions":"false"},"id":1},{"code":"set.seed(3)\n\nmusic_study <-\n  data.frame(Metal=round(rnorm(10,85,5),\n                         digits = 0),\n             Classical=round(rnorm(10,78,8),\n                             digits = 0),\n             Difference=c(\"+\",\"+\",\"+\",\"-\",\"+\",\"+\",\"+\",\"+\",\"-\",\"+\"))\nmusic_study","options":{"fig-height":5,"output":"true","comment":"","results":"markup","message":"true","classes":"","fig-cap":"","editor-max-height":"","context":"interactive","editor-word-wrap":"true","autorun":"false","fig-width":7,"warning":"true","out-height":"","editor-font-scale":"1","label":"unnamed-chunk-2","out-width":"700px","dpi":72,"read-only":"false","editor-quick-suggestions":"false"},"id":2},{"code":"set.seed(3)\nmusic_study$New_Difference <- music_study$Metal-music_study$Classical\nmusic_study","options":{"fig-height":5,"output":"true","comment":"","results":"markup","message":"true","classes":"","fig-cap":"","editor-max-height":"","context":"interactive","editor-word-wrap":"true","autorun":"false","fig-width":7,"warning":"true","out-height":"","editor-font-scale":"1","label":"unnamed-chunk-3","out-width":"700px","dpi":72,"read-only":"false","editor-quick-suggestions":"false"},"id":3},{"code":"library(BSDA)\nSIGN.test(music_study$New_Difference,\n          alternative = \"greater\",\n          md=0)","options":{"fig-height":5,"output":"true","comment":"","results":"markup","message":"true","classes":"","fig-cap":"","editor-max-height":"","context":"interactive","editor-word-wrap":"true","autorun":"false","fig-width":7,"warning":"true","out-height":"","editor-font-scale":"1","label":"unnamed-chunk-4","out-width":"700px","dpi":72,"read-only":"false","editor-quick-suggestions":"false"},"id":4},{"code":"x = c(1,2,3,4,5)\nx","options":{"fig-height":5,"output":"true","comment":"","results":"markup","message":"true","classes":"","fig-cap":"","editor-max-height":"","context":"interactive","editor-word-wrap":"true","autorun":"false","fig-width":7,"warning":"true","out-height":"","editor-font-scale":"1","label":"unnamed-chunk-5","out-width":"700px","dpi":72,"read-only":"false","editor-quick-suggestions":"false"},"id":5},{"code":"x = 1:10\ny = x\nxy <-data.frame(x,y)\nxy","options":{"fig-height":5,"output":"true","comment":"","results":"markup","message":"true","classes":"","fig-cap":"","editor-max-height":"","context":"interactive","editor-word-wrap":"true","autorun":"false","fig-width":7,"warning":"true","out-height":"","editor-font-scale":"1","label":"unnamed-chunk-6","out-width":"700px","dpi":72,"read-only":"false","editor-quick-suggestions":"false"},"id":6},{"code":"matrix(c(x=1:5,\n         y=c(120,130,131,144,100)),\n       nrow = 5,\n       ncol = 2)","options":{"fig-height":5,"output":"true","comment":"","results":"markup","message":"true","classes":"","fig-cap":"","editor-max-height":"","context":"interactive","editor-word-wrap":"true","autorun":"false","fig-width":7,"warning":"true","out-height":"","editor-font-scale":"1","label":"unnamed-chunk-7","out-width":"700px","dpi":72,"read-only":"false","editor-quick-suggestions":"false"},"id":7},{"code":"xmat=matrix(c(x=1:5,y=c(120,130,131,144,100)),\n            nrow = 5,\n            ncol = 2)\nxmat[1,1]\nxmat[2,2]\nxmat[2,1]\nxmat[4,2]","options":{"fig-height":5,"output":"true","comment":"","results":"markup","message":"true","classes":"","fig-cap":"","editor-max-height":"","context":"interactive","editor-word-wrap":"true","autorun":"false","fig-width":7,"warning":"true","out-height":"","editor-font-scale":"1","label":"unnamed-chunk-8","out-width":"700px","dpi":72,"read-only":"false","editor-quick-suggestions":"false"},"id":8}];
+globalThis.qwebrCellDetails = [{"code":"library(BSDA)\n\nx=c(71,74,73,71,78,73,72,71,73,72,74,72,75)\nz.test(x,sigma.x=2.4,\n       alternative=\"two.sided\", \n       mu=71)","id":1,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-1","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"set.seed(3)\n\nmusic_study <-\n  data.frame(Metal=round(rnorm(10,85,5),\n                         digits = 0),\n             Classical=round(rnorm(10,78,8),\n                             digits = 0),\n             Difference=c(\"+\",\"+\",\"+\",\"-\",\"+\",\"+\",\"+\",\"+\",\"-\",\"+\"))\nmusic_study","id":2,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-2","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"set.seed(3)\nmusic_study$New_Difference <- music_study$Metal-music_study$Classical\nmusic_study","id":3,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-3","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"library(BSDA)\nSIGN.test(music_study$New_Difference,\n          alternative = \"greater\",\n          md=0)","id":4,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-4","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"x = c(1,2,3,4,5)\nx","id":5,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-5","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"x = 1:10\ny = x\nxy <-data.frame(x,y)\nxy","id":6,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-6","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"matrix(c(x=1:5,\n         y=c(120,130,131,144,100)),\n       nrow = 5,\n       ncol = 2)","id":7,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-7","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"xmat=matrix(c(x=1:5,y=c(120,130,131,144,100)),\n            nrow = 5,\n            ncol = 2)\nxmat[1,1]\nxmat[2,2]\nxmat[2,1]\nxmat[4,2]","id":8,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-8","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}}];
 
 </script>
 <script type="module">
@@ -1585,7 +1585,7 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="gsrm1.css">
 </head>
 
 <body class="nav-sidebar floating nav-fixed">
@@ -2257,8 +2257,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -2369,7 +2367,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
